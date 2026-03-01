@@ -90,7 +90,7 @@ function FFmpegSetupGate({ children }: { children: React.ReactNode }) {
             DS
           </div>
           <h1 className="text-xl font-bold" style={{ color: 'var(--text)' }}>
-            DanthosStudio
+            DanthosLabs
           </h1>
           <p className="text-xs" style={{ color: 'var(--text-dim)' }}>
             Video Suite v2.0
@@ -128,7 +128,7 @@ function FFmpegSetupGate({ children }: { children: React.ReactNode }) {
                   FFmpeg is required for video processing
                 </p>
                 <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-                  DanthosStudio can download and install it automatically.
+                  DanthosLabs can download and install it automatically.
                   This is a one-time setup (~80 MB download).
                 </p>
               </div>
@@ -205,7 +205,7 @@ function FFmpegSetupGate({ children }: { children: React.ReactNode }) {
                 FFmpeg installed successfully!
               </p>
               <p className="text-xs" style={{ color: 'var(--text-muted)' }}>
-                Loading DanthosStudio...
+                Loading DanthosLabs...
               </p>
             </motion.div>
           )}

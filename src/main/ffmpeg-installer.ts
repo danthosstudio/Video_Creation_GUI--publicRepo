@@ -60,7 +60,7 @@ function downloadFile(
       }
 
       const proto = reqUrl.startsWith('https') ? https : http
-      proto.get(reqUrl, { headers: { 'User-Agent': 'DanthosStudio/2.0' } }, (res) => {
+      proto.get(reqUrl, { headers: { 'User-Agent': 'DanthosLabs/2.0' } }, (res) => {
         // Follow redirects
         if (res.statusCode && res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
           doRequest(res.headers.location, redirectCount + 1)

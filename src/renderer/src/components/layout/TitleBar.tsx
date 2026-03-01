@@ -25,7 +25,7 @@ export function TitleBar() {
       <div className="flex items-center gap-2">
         <div className="w-3 h-3 rounded-full" style={{ background: 'var(--accent)' }} />
         <span className="text-xs font-semibold tracking-wide" style={{ color: 'var(--text-muted)' }}>
-          DanthosStudio
+          DanthosLabs
         </span>
       </div>
 

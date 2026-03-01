@@ -73,7 +73,7 @@ export function Sidebar({ activeTab, onTabChange }: SidebarProps) {
             </div>
             <div className="overflow-hidden whitespace-nowrap">
               <div className="text-sm font-bold" style={{ color: 'var(--text)' }}>
-                DanthosStudio
+                DanthosLabs
               </div>
               <div className="text-[10px]" style={{ color: 'var(--text-dim)' }}>
                 Video Suite v2

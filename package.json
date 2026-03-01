@@ -1,7 +1,7 @@
 {
   "name": "danthos-studio",
-  "version": "2.0.0",
-  "description": "DanthosStudio Video Suite - Professional video processing tool",
+  "version": "2.1.0",
+  "description": "DanthosLabs Video Suite - Professional video processing tool",
   "main": "./out/main/index.js",
   "author": "DanthosStudio",
   "license": "MIT",

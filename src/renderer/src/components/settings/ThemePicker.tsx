@@ -19,7 +19,7 @@ export function SettingsPage() {
           Settings
         </h1>
         <p className="text-sm mt-1" style={{ color: 'var(--text-muted)' }}>
-          Customize your DanthosStudio experience
+          Customize your DanthosLabs experience
         </p>
       </div>
 
@@ -176,7 +176,7 @@ export function SettingsPage() {
               DS
             </div>
             <h3 className="text-sm font-bold" style={{ color: 'var(--text)' }}>
-              DanthosStudio Video Suite
+              DanthosLabs Video Suite
             </h3>
             <p className="text-xs" style={{ color: 'var(--text-dim)' }}>
               Version 2.0.0 &middot; Built with Electron + React

@@ -162,7 +162,7 @@ const features: Omit<FeatureCardProps, 'index'>[] = [
     icon: <Settings size={20} />,
     title: 'Settings & Themes',
     description:
-      'Customize the look of DanthosStudio. Choose from 5 built-in themes or create your own custom theme with full control over every color.',
+      'Customize the look of DanthosLabs. Choose from 5 built-in themes or create your own custom theme with full control over every color.',
     steps: [
       'Go to the Settings tab in the sidebar',
       'Click any theme card to switch instantly',
@@ -191,7 +191,7 @@ export function Guide() {
           </div>
           <div>
             <h1 className="text-2xl font-bold" style={{ color: 'var(--text)' }}>
-              Welcome to DanthosStudio
+              Welcome to DanthosLabs
             </h1>
             <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
               Video Suite v2.0
