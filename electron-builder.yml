@@ -2,8 +2,8 @@ appId: com.danthosstudio.videosuite
 productName: DanthosStudio
 publish:
   provider: github
-  owner: B1G-R3D
-  repo: DanthosStudio
+  owner: danthosstudio
+  repo: Video_Creation_GUI--publicRepo
 directories:
   buildResources: resources
   output: dist
