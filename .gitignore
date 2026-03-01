@@ -8,3 +8,10 @@ __pycache__/
 Thumbs.db
 *.log
 .claude/
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+*.key
+dev-app-update.yml
