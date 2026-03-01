@@ -21,10 +21,10 @@ Click to download the installer for your platform:
 
 | Platform | Download |
 |----------|----------|
-| Windows  | [DanthosLabs-Setup-2.2.0-x64.exe](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-Setup-2.2.0-x64.exe) |
+| Windows | [DanthosLabs-Setup-2.2.0-x64.exe](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-Setup-2.2.0-x64.exe) |
 | macOS (Intel) | [DanthosLabs-2.2.0-x64.dmg](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-2.2.0-x64.dmg) |
 | macOS (Apple Silicon) | [DanthosLabs-2.2.0-arm64.dmg](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-2.2.0-arm64.dmg) |
-| Linux    | [DanthosLabs-2.2.0-x64.AppImage](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-2.2.0-x64.AppImage) |
+| Linux | [DanthosLabs-2.2.0-x86_64.AppImage](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-2.2.0-x86_64.AppImage) |
 
 Already installed? Just open the app and go to **Settings > Check for Updates** to update in-app.
 
