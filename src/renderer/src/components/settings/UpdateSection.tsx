@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { RefreshCw, Download, RotateCcw, CheckCircle, AlertTriangle, Loader2 } from 'lucide-react'
+import { RefreshCw, Download, RotateCcw, CheckCircle, AlertTriangle, Loader2, ChevronDown, FileText } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/Card'
 import { AnimatedButton } from '@/components/ui/AnimatedButton'
+import { changelog, getChangelogForVersion } from '@/lib/changelog'
 
 type UpdateState =
   | { phase: 'idle' }
@@ -16,6 +17,7 @@ type UpdateState =
 export function UpdateSection() {
   const [appVersion, setAppVersion] = useState('...')
   const [state, setState] = useState<UpdateState>({ phase: 'idle' })
+  const [showChangelog, setShowChangelog] = useState(false)
 
   useEffect(() => {
     window.api.getAppVersion().then(setAppVersion)
@@ -236,6 +238,89 @@ export function UpdateSection() {
               </motion.div>
             )}
           </AnimatePresence>
+
+          {/* Changelog dropdown */}
+          <div>
+            <button
+              onClick={() => setShowChangelog(!showChangelog)}
+              className="flex items-center gap-2 w-full text-left py-1.5 group"
+            >
+              <FileText size={12} style={{ color: 'var(--text-dim)' }} />
+              <span className="text-xs font-medium" style={{ color: 'var(--text-muted)' }}>
+                Version Notes
+              </span>
+              <motion.div
+                animate={{ rotate: showChangelog ? 180 : 0 }}
+                transition={{ duration: 0.2 }}
+                className="ml-auto"
+              >
+                <ChevronDown size={12} style={{ color: 'var(--text-dim)' }} />
+              </motion.div>
+            </button>
+
+            <AnimatePresence>
+              {showChangelog && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: 'auto' }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.2 }}
+                  className="overflow-hidden"
+                >
+                  <div className="space-y-3 pt-2">
+                    {changelog.map((entry) => {
+                      const isCurrent = entry.version === appVersion
+                      return (
+                        <div
+                          key={entry.version}
+                          className="rounded-lg px-3 py-2.5 space-y-1.5"
+                          style={{
+                            background: isCurrent ? 'var(--accent-muted)' : 'var(--bg-secondary)',
+                            border: isCurrent ? '1px solid var(--accent)' : '1px solid transparent'
+                          }}
+                        >
+                          <div className="flex items-center gap-2">
+                            <span
+                              className="text-xs font-bold"
+                              style={{ color: isCurrent ? 'var(--accent)' : 'var(--text)' }}
+                            >
+                              v{entry.version}
+                            </span>
+                            {isCurrent && (
+                              <span
+                                className="text-[9px] px-1.5 py-0.5 rounded-full font-semibold"
+                                style={{ background: 'var(--accent)', color: 'var(--bg-primary)' }}
+                              >
+                                Current
+                              </span>
+                            )}
+                            <span className="text-[10px] ml-auto" style={{ color: 'var(--text-dim)' }}>
+                              {entry.date}
+                            </span>
+                          </div>
+                          <ul className="space-y-0.5">
+                            {entry.highlights.map((note, i) => (
+                              <li key={i} className="flex items-start gap-1.5">
+                                <span
+                                  className="text-[8px] mt-1 shrink-0"
+                                  style={{ color: 'var(--text-dim)' }}
+                                >
+                                  ●
+                                </span>
+                                <span className="text-[11px]" style={{ color: 'var(--text-muted)' }}>
+                                  {note}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )
+                    })}
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
         </div>
       </CardContent>
     </Card>

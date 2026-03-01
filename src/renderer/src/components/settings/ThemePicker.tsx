@@ -179,7 +179,7 @@ export function SettingsPage() {
               DanthosLabs Video Suite
             </h3>
             <p className="text-xs" style={{ color: 'var(--text-dim)' }}>
-              Version 2.0.0 &middot; Built with Electron + React
+              Built with Electron + React
             </p>
           </div>
         </CardContent>

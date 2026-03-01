@@ -1,5 +1,5 @@
 appId: com.danthosstudio.videosuite
-productName: DanthosStudio
+productName: DanthosLabs
 publish:
   provider: github
   owner: danthosstudio
@@ -21,14 +21,14 @@ win:
       arch:
         - x64
   icon: resources/icon.ico
-  artifactName: DanthosStudio-Setup-${version}-${arch}.${ext}
+  artifactName: DanthosLabs-Setup-${version}-${arch}.${ext}
   signAndEditExecutable: false
 nsis:
   oneClick: true
   perMachine: false
   allowToChangeInstallationDirectory: false
   deleteAppDataOnUninstall: false
-  shortcutName: DanthosStudio
+  shortcutName: DanthosLabs
 mac:
   target:
     - target: dmg
@@ -37,7 +37,7 @@ mac:
         - arm64
   icon: resources/icon.icns
   category: public.app-category.video
-  artifactName: DanthosStudio-${version}-${arch}.${ext}
+  artifactName: DanthosLabs-${version}-${arch}.${ext}
 dmg:
   contents:
     - x: 130
@@ -53,4 +53,4 @@ linux:
         - x64
   icon: resources/icon.png
   category: AudioVideo
-  artifactName: DanthosStudio-${version}-${arch}.${ext}
+  artifactName: DanthosLabs-${version}-${arch}.${ext}
