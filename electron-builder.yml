@@ -1,0 +1,56 @@
+appId: com.danthosstudio.videosuite
+productName: DanthosStudio
+publish:
+  provider: github
+  owner: B1G-R3D
+  repo: DanthosStudio
+directories:
+  buildResources: resources
+  output: dist
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.*'
+  - '!{.eslintignore,.eslintrc.cjs,.prettierignore,.prettierrc.yaml,dev-app-update.yml,CHANGELOG.md,README.md}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+  - '!{tailwind.config.js,postcss.config.js}'
+  - '!danthos_studio_gui.py'
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: resources/icon.ico
+  artifactName: DanthosStudio-Setup-${version}-${arch}.${ext}
+  signAndEditExecutable: false
+nsis:
+  oneClick: true
+  perMachine: false
+  allowToChangeInstallationDirectory: false
+  deleteAppDataOnUninstall: false
+  shortcutName: DanthosStudio
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+  icon: resources/icon.icns
+  category: public.app-category.video
+  artifactName: DanthosStudio-${version}-${arch}.${ext}
+dmg:
+  contents:
+    - x: 130
+      y: 220
+    - x: 410
+      y: 220
+      type: link
+      path: /Applications
+linux:
+  target:
+    - target: AppImage
+      arch:
+        - x64
+  icon: resources/icon.png
+  category: AudioVideo
+  artifactName: DanthosStudio-${version}-${arch}.${ext}
