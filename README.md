@@ -15,17 +15,20 @@ A professional video processing desktop app built with Electron, React, and Type
 - **In-App Auto-Updater** — Check for updates, download, and install from within the app
 - **Built-in Guide** — Interactive guide explaining every tool
 
-## Downloads
+## Downloads — v2.2.0
 
-Head to the [Releases](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases) page to download the latest installer for your platform:
+Click to download the installer for your platform:
 
-| Platform | File |
-|----------|------|
-| Windows  | `DanthosLabs-Setup-x.x.x-x64.exe` |
-| macOS    | `DanthosLabs-x.x.x-x64.dmg` / `DanthosLabs-x.x.x-arm64.dmg` |
-| Linux    | `DanthosLabs-x.x.x-x64.AppImage` |
+| Platform | Download |
+|----------|----------|
+| Windows  | [DanthosLabs-Setup-2.2.0-x64.exe](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-Setup-2.2.0-x64.exe) |
+| macOS (Intel) | [DanthosLabs-2.2.0-x64.dmg](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-2.2.0-x64.dmg) |
+| macOS (Apple Silicon) | [DanthosLabs-2.2.0-arm64.dmg](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-2.2.0-arm64.dmg) |
+| Linux    | [DanthosLabs-2.2.0-x64.AppImage](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases/download/v2.2.0/DanthosLabs-2.2.0-x64.AppImage) |
 
-Previous versions are archived under older releases on the same page.
+Already installed? Just open the app and go to **Settings > Check for Updates** to update in-app.
+
+[All releases & previous versions](https://github.com/danthosstudio/Video_Creation_GUI--publicRepo/releases)
 
 > **Note:** The app is not code-signed, so you may see a SmartScreen warning on Windows or a Gatekeeper prompt on macOS. This is normal for unsigned apps — click "More info" > "Run anyway" on Windows.
 
